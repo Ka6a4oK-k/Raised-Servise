@@ -364,13 +364,13 @@ a {
     html {
         font-size: 10px;
     }
+    .swiper-button {
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
     html {
         font-size: 7px;
-    }
-    .swiper-button {
-        display: none;
     }
 }
 @media screen and (max-width: 600px) {
