@@ -1,5 +1,5 @@
 function getSlides() {
-  if (window.screen.width < 800) {
+  if (window.outerWidth < 800) {
     console.log(2);
     return 2
   } else {

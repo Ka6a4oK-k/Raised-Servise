@@ -375,7 +375,6 @@ a {
     }
 }
 @media screen and (max-width: 600px) {
-
     .header__topbar {
         padding-inline: 20%;
     }
