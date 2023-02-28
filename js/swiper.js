@@ -1,15 +1,10 @@
-function getSlides() {
-  if (window.outerWidth < 800) {
-    console.log(2);
-    return 2
-  } else {
-    console.log(3);
-    return 3
-  }
-}
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: getSlides(),
+    slidesPerView: 2,
+    breakpoints: {
+      800: {
+        slidesPerView: 3,
+      }},
     loop: true,
     spaceBetween: 20,
     // Navigation arrows
