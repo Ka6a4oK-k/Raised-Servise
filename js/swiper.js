@@ -1,5 +1,15 @@
+function getSlides() {
+  if (window.screen.width < 800) {
+    console.log(2);
+    return 2
+  } else {
+    console.log(3);
+    return 3
+  }
+}
+
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: getSlides(),
     loop: true,
     spaceBetween: 20,
     // Navigation arrows
@@ -7,4 +17,4 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  });
+});
